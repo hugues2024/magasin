@@ -1,0 +1,244 @@
+html{
+    --var-background:#ffffb4;
+    --var-text-color:#161615;
+    --var-secondary-color:hsl(73, 78%, 79%);
+}
+
+body{
+    background-color: var(--var-secondary-color);
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--var-background);
+    position: sticky;
+    top: 0;
+    padding: 0.7rem 1rem;
+    margin: 0rem 1rem;
+    height: 3rem;
+}
+
+header h2{
+    font-size: 1.8rem;
+    font-weight: 200;
+}
+
+header nav ul li{
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+header button{
+    background-color: rgb(218, 174, 65);
+    color: var(--var-text-color);
+    padding: 0.9rem 1rem;
+    border: none;
+    border-radius: 9px;
+    transition: 0.3s;
+}
+
+header button:hover{
+    background-color:white;
+    color: var(--var-text-color);
+    cursor: pointer;
+}
+
+main{
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.bloc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+main .bloc .form{
+    background-color: #f0f0b9;
+    width: 50%;
+    height: 55vh;;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-self: space-between;
+    align-items: center;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+main h2{
+    font-size: 2rem;
+}
+
+.form input,textarea{
+    width: 90%;
+    height: 1rem;
+    margin-bottom: 1rem;
+    outline: none;;
+    border: 1px solid rgb(102, 100, 100);
+}
+
+.form input:hover ,textarea:hover{
+    border: 1px solid rgb(97, 211, 231);
+    background-color: white;
+}
+.form textarea{
+    height: 2rem;
+    resize: none;
+}
+
+#button{
+    border-radius: 5px;
+    padding: 0.7rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(163, 230, 109);
+    color: white;
+    cursor: pointer;
+    width: 90%;
+    height: 1rem;
+    margin-bottom: 1rem;
+    outline: none;;
+    border: 1px solid rgb(102, 100, 100);
+}
+
+.form button:hover{
+    border: 1px solid rgb(97, 211, 231);
+    background-color: white;
+}
+main .bloc .paye{
+    background-color: #f0f0b9;
+    width: 50%;
+    height: 55vh;;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-self: space-between;
+    align-items: center;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+#articles{
+    display: flex;
+    flex-direction: column;
+}
+
+.part{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.nb,.prix{
+    width: 15rem;
+    height: 1.3rem;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgb(63, 40, 40);
+}
+
+#ok{
+    width: 100%;
+    height: 1.5rem;
+    background-color: var(--var-background);
+    outline: none;
+    border: 1px solid darkkhaki;
+    border-radius: 5px;
+}
+.bloc .paye #articles .part6 button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #161615;
+    border: 1px solid black;
+}
+.part6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:768px){
+  
+    header nav{
+        display: none;
+    }
+
+    header h2{
+        font-size: 100%;
+        width: 60%;
+    }
+
+    header button{
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .bloc{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main h2{
+        font-size: 1.5vh;
+        text-align: center; 
+        margin-right: 1rem;
+}
+    
+    main .bloc .form{
+        background-color: #f0f0b9;
+        width: 100%;
+        height: 25vh;;
+        border-radius: 9px;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
+        padding: 2rem;
+        flex-wrap: wrap;
+    }
+
+    main .bloc .paye{
+        background-color: #f0f0b9;
+        width: 100%;
+        height: 30vh;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    #articles{
+        margin: 0 auto;
+        justify-content: center;
+    }
+    
+    .nb,.prix{
+        width: 15vh;
+        height: 1.5vh;
+        border-radius: 5px;
+        outline: none;
+        border: 1px solid rgb(63, 40, 40);
+    }
+
+    .part{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .label{
+        display: flex;
+        font-size: 1vh;
+        height: 1.1vh;
+        flex-wrap: wrap;
+    }
+}

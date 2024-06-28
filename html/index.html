@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magasin</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h2>Bienvenue</h2>
+        <nav>
+            <ul>
+                <li>Accueil</li>
+            </ul>
+        </nav>
+        <button>Contactez-nous</button>
+    </header>
+    <main>
+        <div class="bloc">
+            <div class="form">
+                <h2>Informations sur le client</h2><br>
+                <form >
+                    <input type="text" name="nom" id="nom" placeholder="Nom">
+                    <input type="text" name="prenom" id="prenom" placeholder="Prénom(s)">
+                    <input type="email" name="email" id="email" placeholder="example@email.com">
+                    <textarea name="message" id="message" placeholder="Message"></textarea>
+                    <button type="submit" id="button">Envoyer</button>
+                </form>
+            </div>
+            <div class="paye">
+                <h2>Informations sur les achats</h2>
+                <form id="articles">
+                    <div class="part">
+                        <label for="articles" class="label">Nombre de vêtements:</label>
+                        <input type="number" class="nb">
+                    </div>
+                    <div class="part">
+                        <label for="prix" class="label">Prix unitaire:</label><br>
+                        <input type="number" class="prix">
+                    </div>
+                    <div class="part">
+                        <label for="prix" class="label">Nombre de chaussures:</label><br>
+                        <input type="number" class="nb">
+                    </div>
+                    <div class="part">
+                        <label for="prix" class="label">Prix unitaire:</label><br>
+                        <input type="number" class="prix">
+                    </div>
+                    <div class="part">
+                        <label for="prix" class="label">Total:</label><br>
+                        <input type="number" class="prix">
+                    </div>
+                    <div class="part6">
+                        <button type="submit" id="ok">Enregistrer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
